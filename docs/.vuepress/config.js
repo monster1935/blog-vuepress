@@ -1,5 +1,5 @@
 module.exports = {
-  title: '竹杖芒鞋',
+  title: '竹杖芒鞋的空间',
   description: '记录学习、工作、生活',
   locales: {
     '/': {
@@ -11,14 +11,7 @@ module.exports = {
   themeConfig: {
     subSidebar: 'auto',
     nav: [
-      { text: '首页', link: '/' },
-      {
-        text: 'monster1935 的博客',
-        items: [
-          { text: 'Github', link: 'https://github.com/mqyqingfeng' },
-          { text: '掘金', link: 'https://juejin.cn/user/712139234359182/posts' }
-        ]
-      }
+      { text: '竹杖芒鞋', link: 'https://monster1935.cn' },
     ],
     sidebar: [
       {
@@ -26,16 +19,15 @@ module.exports = {
         path: '/',
         collapsable: false, // 不折叠
         children: [
-          { title: "学前必读", path: "/" }
+          { title: "关于本站", path: "/" }
         ]
       },
       {
-        title: "基础学习",
-        path: '/handbook/nodejs-in-byte',
+        title: "算法每日一练",
+        path: '/leetcode/index',
         collapsable: false, // 不折叠
         children: [
-          { title: "条件类型", path: "/handbook/nodejs-in-byte" },
-          { title: "泛型", path: "/handbook/test2" }
+          { title: "无重复字符的最长子串", path: "/leetcode/2" },
         ],
       }
     ]
